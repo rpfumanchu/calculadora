@@ -1,0 +1,20 @@
+.input {
+  height: 75px;
+  border-radius: 50px;
+  border-bottom: 20px;
+  display: flex;
+  /* con flex-end conseguimos que se alineen a la derecha*/
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: #0a0a23;
+  color: white;
+  /*en el sentido de l reloj alto derecha abajo izquierda*/
+  padding: 11px 30px 11px 11px;
+  margin: 1px solid #888;
+  /*para que la pantalla tenga como una sombra*/
+  box-shadow: -1px 4px 1px 1px white;
+  
+
+}

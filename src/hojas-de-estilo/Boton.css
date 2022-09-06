@@ -1,0 +1,34 @@
+.boton-contenedor {
+    height: 83px;
+    display: flex;
+    /*con flex 1 1 conseguimos que si hay dos botones se repartan el espacio de igual aigual y si hay 4 botones pues lo mismo*/
+    flex: 1 1;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 38px;
+    background-color: #1b1b32;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 4px;
+    cursor: pointer;
+    /*esta propiedad user-selec nos permite que eltexto no se pueda selecionar*/
+    user-select: none;
+}
+
+.boton-contenedor:hover {
+    background-color: #00471b;
+
+}
+
+
+
+.operador {
+    background-color: #00471b;
+
+}
+
+.operador:hover {
+    background-color: #ff6600;
+}
