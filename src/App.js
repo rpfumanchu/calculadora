@@ -33,8 +33,7 @@ function App() {
 
   };
   
-  
-
+ 
 
 
 
@@ -75,7 +74,7 @@ function App() {
         <div className="fila">
           <BotonClear manejarClear={agregarClear}>Clear</BotonClear>
           <Boton manejarClic={agregarInput}>%</Boton>
-          
+          <Boton manejarClic={agregarInput}>^</Boton>
         </div>
       
       </div>
