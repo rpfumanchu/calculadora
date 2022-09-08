@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.anim-appear {
+  opacity: 0.01;
+}
+ 
+.anim-appear.anim-appear-active{
+  opacity: 2;
+  transition: opacity 5s ease-in;
+}

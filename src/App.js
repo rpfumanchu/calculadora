@@ -3,7 +3,9 @@ import freeCodeCampLogo from "./imagenes/freecodecamp-logo.png";
 import Boton from "./componentes/Boton.js";
 import Pantalla from "./componentes/Pantalla.js";
 import BotonClear from "./componentes/BotonClear.js"
-import { useState} from "react"
+import { useState } from "react"
+/*importamos mathjs para poder hacer las funciones matematicas*/ 
+import { evaluate, } from "mathjs";
 
 
 
@@ -20,6 +22,20 @@ function App() {
   const agregarClear = valor => {
     setInput("");
   };
+
+  const calcularResultado = () => {
+    /*si queremos podemos darle un condicional para que nos salte un mensaje de alerta si damos al = sin haber metido datos*/
+    if (input){
+      setInput(evaluate(input));
+    } else {
+      alert("Por favor ingrese valores para poder realizar los calculos")
+    }
+
+  };
+  
+  
+
+
 
 
   return (
@@ -51,13 +67,15 @@ function App() {
           <Boton manejarClic={agregarInput}>*</Boton>
         </div>
         <div className="fila">
-        <Boton manejarClic={agregarInput}>=</Boton>
+        <Boton manejarClic={calcularResultado}>=</Boton>
           <Boton manejarClic={agregarInput}>0</Boton>
           <Boton manejarClic={agregarInput}>.</Boton>
           <Boton manejarClic={agregarInput}>/</Boton>
         </div>
         <div className="fila">
           <BotonClear manejarClear={agregarClear}>Clear</BotonClear>
+          <Boton manejarClic={agregarInput}>%</Boton>
+          
         </div>
       
       </div>

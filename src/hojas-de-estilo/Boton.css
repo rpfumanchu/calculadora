@@ -15,6 +15,7 @@
     cursor: pointer;
     /*esta propiedad user-selec nos permite que eltexto no se pueda selecionar*/
     user-select: none;
+    
 }
 
 .boton-contenedor:hover {
