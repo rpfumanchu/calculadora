@@ -3,12 +3,12 @@ import "../App.css";
 
 
 
-function Logo (props) {
+function Logo (Foto) {
   return (
     <div className="freecodecamp-logo-contenedor">
       <img
         className="freecodecamp-logo"
-        src={require(`../imagenes/freecodecamp-${props.imagen}.png`)}
+        src={require(`../imagenes/freecodecamp-${Foto.imagen}.png`)}
         alt="foto de logo"/>
     </div>
 
