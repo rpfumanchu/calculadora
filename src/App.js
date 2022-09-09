@@ -1,8 +1,9 @@
 import "./App.css";
-import freeCodeCampLogo from "./imagenes/freecodecamp-logo.png";
+
 import Boton from "./componentes/Boton.js";
 import Pantalla from "./componentes/Pantalla.js";
 import BotonClear from "./componentes/BotonClear.js"
+import Logo from "./componentes/Logo.js"
 
 import { useState } from "react"
 /*importamos mathjs para poder hacer las funciones matematicas*/ 
@@ -36,13 +37,9 @@ function App() {
   
  
   return (
-    <div className="App">
-      <div className="freecodecamp-logo-contenedor">
-      <img 
-          src={freeCodeCampLogo}
-          className="freecodecamp-logo"
-          alt="Logo de freeCodeCamp" />
-      </div>
+    <div className="App">       
+      <Logo
+        imagen="logo"/>
       <div className="contenedor-calculadora">
         <Pantalla input={input}/>
         <div className="fila">
